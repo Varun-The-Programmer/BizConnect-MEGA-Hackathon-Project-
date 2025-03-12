@@ -281,10 +281,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 20px 40px;
-  max-width: 1200px;
+  padding: 20px 40px; 
+  max-width: 1120px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 56px;
 }
 
 
@@ -298,6 +298,7 @@ body {
   font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 20px;
+  margin: auto;
 }
 
 
@@ -349,17 +350,6 @@ footer {
 }
 
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-
 .hero-content h1,
 .hero-content p,
 .hero-button {
@@ -408,7 +398,6 @@ footer {
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #333;
 }
 
 .login-form {
@@ -492,4 +481,67 @@ footer {
 .linkText {
   color: white;
   text-decoration: none;
+}
+/* Connections Section */
+.connections-section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.connections-section h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.connections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.connection-card {
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.connection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.connection-card img {
+  width: 80px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover; /* Prevents image distortion */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.connection-card h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.connection-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.connection-card .button {
+  padding: 12px 25px;
+  font-size: 1em;
+}
+
+.infoImages {
+  margin-left: 100px;
+  border-radius: 100%;
 }
