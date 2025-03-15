@@ -239,6 +239,24 @@ body {
   overflow: hidden;
 }
 
+.hero-section-insights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+  padding-top: 60px;
+  background-image: url('ConnectionBackground.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  filter: hue-rotate(309deg);
+}
+
 
 .hero-section::before {
   content: '';
@@ -695,4 +713,65 @@ footer {
     cursor: pointer;
 }
 
+.insights-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  max-width: 1120px;
+  margin: 100px auto 56px;
+  background-color: #f5f8fd;
+  margin-bottom: -40px;
+}
 
+.insights-content {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  text-align: center;
+}
+
+.insights-content-left {
+  width: 60%; 
+  margin-right: 5em; 
+  text-align: start
+}
+
+.insights-content-right {
+  width: 60%; 
+  margin-left: 5em; 
+  text-align: end
+}
+
+@media only screen and (max-width: 1000px) {
+  .insights-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .insights-content-right, .insights-content-left {
+    text-align: center;
+    margin: 0em;
+  }
+}
+
+.insights-content h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+.insights-content p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.insights-image {
+  align-self: center;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1.5%;
+}
