@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Head Code -->
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,70 +9,216 @@
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
+
     <body>
+        <!-- Navbar Code -->
+        <nav id="navbar" class="navbar glass-nav">
+            <div class="logo">BizConnect<span class="beta"></span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="connections.html">Connections</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li>
+                    <a href="login.html">
+                      <button class="button">
+                        Login
+                      </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section Code -->
+        <header class="hero-section-connection">
+            <div class="hero-content">
+                <h1>Connect With Businesses</h1>
+                <p>Join a vibrant community of businesses. Together, we can achieve more.</p>
+                <body background="background-image.jpg"></body>
+            </div>
+        </header>
+
+        <!-- Connections Code -->
         <section class="connections-section">
-            <h2>Connections</h2>
-            <link rel="stylesheet" href="styles.css">
             <div class="connections-grid">
+                <!-- Company 1 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="Tech Innovators Inc. Logo">
+                    <img class="connections-Image" src="https://media.istockphoto.com/id/1159741374/vector/creative-icon-of-a-half-brain-half-lightbulb-representing-ideas-creativity-knowledge.jpg?s=612x612&w=0&k=20&c=UggbJ9Wp1K3cGVR8x7zROTUZr9VHxe6vqU_3tgCRpCI=" alt="Tech Innovators Inc. Logo">
                     <h3>Tech Innovators Inc.</h3>
                     <p>Revolutionizing software development.</p>
-                    <button class="button">Connect</button>
+                    <button class="button connectButton" data-modal="techInnovatorsModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 1 -->
+                <div id="techInnovatorsModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>Tech Innovators Inc.</h2>
+                        <p>Tech Innovators Inc. specializes in developing cutting-edge technology solutions for businesses and consumers. They focus on artificial intelligence, smart devices, and software that enhance productivity and streamline workflows. Their team of experts constantly pushes the boundaries of innovation, creating products that shape the future. From AI-driven assistants to advanced automation tools, they are at the forefront of the tech revolution.</p>
+                        <h4>Contact: info@techinnovators.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 2 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="Green Solutions Co. Logo">
+                    <img src="https://greensolutionsfl.com/wp-content/uploads/2020/09/hero-logo-with-glow.png" alt="Green Solutions Co. Logo">
                     <h3>Green Solutions Co.</h3>
-                    <p>Sustainable energy solutions for a better future.</p>
-                    <button class="button">Connect</button>
+                    <p>Sustainable energy solutions.</p>
+                    <button class="button connectButton" data-modal="greenSolutionsModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 2 -->
+                <div id="greenSolutionsModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>Green Solutions Co.</h2>
+                        <p>Green Solutions Co. is dedicated to providing sustainable energy and environmental solutions for businesses and communities. They develop eco-friendly products, such as solar panels, energy-efficient systems, and waste-reduction technologies. Their mission is to reduce carbon footprints while making renewable energy accessible and affordable. Through partnerships and research, they drive the transition toward a cleaner, greener planet.</p>
+                        <h4>Contact: info@greensolutions.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 3 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="Global Marketing Group Logo">
+                    <img src="https://png.pngtree.com/template/20191014/ourmid/pngtree-trade-market-logo-design-template-finance-logo-with-arrow-image_318280.jpg" alt="Global Marketing Group Logo">
                     <h3>Global Marketing Group</h3>
                     <p>Expanding your brand's reach worldwide.</p>
-                    <button class="button">Connect</button>
+                    <button class="button connectButton" data-modal="GlobalMarketingGroupModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 3 -->
+                <div id="GlobalMarketingGroupModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>Global Marketing Group</h2>
+                        <p>Global Marketing Group is a premier agency specializing in digital marketing, branding, and global outreach strategies. They help businesses expand their reach through social media campaigns, search engine optimization, and data-driven advertising. Their team of experts analyzes market trends to create customized marketing plans that maximize engagement and revenue. With a strong focus on creativity and innovation, they transform brands into industry leaders.</p>
+                        <h4>Contact: info@globalmarketinggroup.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 4 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="HealthTech Innovations Logo">
+                    <img src="https://img.freepik.com/premium-vector/health-tech-logo-design-white-background_990473-7518.jpg" alt="HealthTech Innovations Logo">
                     <h3>HealthTech Innovations</h3>
                     <p>Advancing healthcare through technology.</p>
-                    <button class="button">Connect</button>
+                    <button class="button connectButton" data-modal="HealthTechInnovationsModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 4 -->
+                <div id="HealthTechInnovationsModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>HealthTech Innovations</h2>
+                        <p>HealthTech Innovations pioneers advancements in medical technology, improving patient care and healthcare efficiency. Their products include AI-powered diagnostic tools, wearable health monitors, and smart medical devices. By integrating cutting-edge research with digital solutions, they help medical professionals make faster and more accurate decisions. Their mission is to revolutionize healthcare through innovation and accessibility.</p>
+                        <h4>Contact: info@healthtechinnovations.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 5 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="Creative Design Studio Logo">
+                    <img src="https://assets.awwwards.com/awards/images/2012/12/best-logo-2013-3.jpg" alt="Creative Design Studio Logo">
                     <h3>Creative Design Studio</h3>
                     <p>Crafting unique visual experiences.</p>
-                    <button class="button">Connect</button>
+                    <button class="button connectButton" data-modal="CreativeDesignStudioModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 5 -->
+                <div id="CreativeDesignStudioModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>Creative Design Studio</h2>
+                        <p>Creative Design Studio is a full-service creative agency specializing in branding, graphic design, and digital media. They craft visually stunning marketing materials, websites, and user experiences for businesses of all sizes. Their team of designers, illustrators, and strategists work closely with clients to bring their vision to life. Whether it’s logo design or full-scale brand development, they blend creativity with strategy to make an impact.</p>
+                        <h4>Contact: info@creativedesignstudios.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 6 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="Financial Growth Partners Logo">
+                    <img src="https://cdn.vectorstock.com/i/500p/63/98/financial-logo-market-growth-business-arrow-vector-54376398.jpg" alt="Financial Growth Partners Logo">
                     <h3>Financial Growth Partners</h3>
                     <p>Securing your financial future.</p>
-                    <button class="button">Connect</button>
+                    <button class="button connectButton" data-modal="FinancialGrowthModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 6 -->
+                <div id="FinancialGrowthModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>Financial Growth Partners</h2>
+                        <p>Financial Growth Partner provides expert financial advisory services to individuals and businesses seeking long-term success. They specialize in investment strategies, wealth management, and financial planning tailored to clients' specific needs. Their team of experienced advisors helps clients make informed decisions to grow and protect their assets. By offering personalized solutions, they empower clients to achieve financial security and prosperity.</p>
+                        <h4>Contact: info@FinancialGrowth.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 7 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="AI Research Labs Logo">
+                    <img src="https://imgcdn.stablediffusionweb.com/2024/3/11/06e70821-8950-4c58-9c7d-5c569137c7f6.jpg" alt="AI Research Labs Logo">
                     <h3>AI Research Labs</h3>
                     <p>Pioneering the future of artificial intelligence.</p>
-                    <button class="button">Connect</button>
+                    <button class="button connectButton" data-modal="AIReasearchLabsModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 7 -->
+                <div id="AIReasearchLabsModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>AI Research Labs</h2>
+                        <p>AI Research Labs is a leading research and development company focused on artificial intelligence and machine learning. They create advanced AI models for applications in automation, robotics, natural language processing, and data analytics. Their team of scientists and engineers collaborates with industries to implement AI-driven solutions that enhance efficiency and innovation. By pushing the boundaries of AI, they strive to make technology more intelligent and accessible.</p>
+                        <h4>Contact: info@AiLabs.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 8 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="E-commerce Solutions Logo">
+                    <img src="https://banner2.cleanpng.com/20180920/qjq/kisspng-woocommerce-theme-e-commerce-computer-icons-plug-i-ecommerce-websites-web-design-digital-marketin-5ba3d1c6d64d89.0392801215374627268778.jpg" alt="E-commerce Solutions Logo">
                     <h3>E-commerce Solutions</h3>
                     <p>Building and scaling online businesses.</p>
-                    <button class="button">Connect</button>
+                    <button class="button connectButton" data-modal="commerceSolutionsModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 8 -->
+                <div id="commerceSolutionsModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>E-commerce Solutions</h2>
+                        <p>E-commerce Solutions helps businesses build and optimize their online stores for maximum profitability. They provide services such as website development, payment integration, and digital marketing strategies tailored for e-commerce success. With expertise in customer experience and data analytics, they help brands increase sales and improve user engagement. Their goal is to create seamless and scalable online shopping experiences.</p>
+                        <h4>Contact: info@CommerceSolutions.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 9 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="Education Forward Inc. Logo">
+                    <img src="https://media.istockphoto.com/id/1409722748/photo/students-raising-hands-while-teacher-asking-them-questions-in-classroom.jpg?s=612x612&w=0&k=20&c=NbVChOV9wIbQOhUD6BqpouZHHBbyQ2rkSjaVfIhpMv8=" alt="Education Forward Inc. Logo">
                     <h3>Education Forward Inc.</h3>
                     <p>Transforming education for the 21st century.</p>
-                    <button class="button">Connect</button>
+                    <button class="button connectButton" data-modal="educationForwardModal">Learn more</button>
                 </div>
+                
+                <!-- Modal 9 -->
+                <div id="educationForwardModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>Education Forward Inc.</h2>
+                        <p>Education Forward Inc. is dedicated to transforming education through technology and innovative learning solutions. They develop e-learning platforms, digital curricula, and interactive tools to enhance student engagement and academic performance. Their mission is to make education more accessible and personalized for learners of all backgrounds. By integrating AI and data-driven insights, they help educators and students navigate the future of learning.</p>
+                        <h4>Contact: info@EduForward.com</h4>
+                    </div>
+                </div>
+
+                <!-- Company 10 -->
                 <div class="connection-card glass">
-                    <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" alt="Mobile App Developers Logo">
+                    <img src="https://images.pexels.com/photos/336948/pexels-photo-336948.jpeg" alt="Mobile App Developers Logo">
                     <h3>Mobile App Developers</h3>
-                    <p>Creating innovative mobile experiences.</p>
-                    <button class="button">Connect</button>
+                    <p>Mobile Apps for all.</p>
+                    <button class="button connectButton" data-modal="mobileAppModal">Learn more</button>
+                </div>
+                
+                <!-- Modal 10 -->
+                <div id="mobileAppModal" class="modal">
+                    <div class="modal-content glass">
+                        <span class="close-button">&times;</span>
+                        <h2>Mobile App Developers</h2>
+                        <p>Mobile App Innovators empower businesses to design and develop customized mobile applications that drive engagement and growth. They offer services such as app design, cross-platform development, and seamless API integrations tailored to meet unique business needs. With expertise in user experience (UX) design, app performance optimization, and cutting-edge technologies, they help brands build intuitive and reliable mobile solutions. Their mission is to deliver scalable and impactful apps that enhance user satisfaction and business success.</p>
+                        <h4>Contact: info@AppDevs.com</h4>
+                    </div>
                 </div>
             </div>
         </section>
